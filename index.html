@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Bites</title>
+  <!-- Tailwind CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-gray-900 text-gray-200">
+
+  <!-- Navigation Bar -->
+  <header class="bg-gray-800 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-6">
+        <div class="text-2xl font-bold text-yellow-400">Delicious Bites</div>
+        <nav class="hidden md:flex space-x-10">
+          <a href="#home" class="text-gray-300 hover:text-gray-100">Home</a>
+          <a href="#about" class="text-gray-300 hover:text-gray-100">About Us</a>
+          <a href="#menu" class="text-gray-300 hover:text-gray-100">Menu</a>
+          <a href="#contact" class="text-gray-300 hover:text-gray-100">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="text-gray-300 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 5h14a1 1 0 100-2H3a1 1 0 100 2zm0 6h14a1 1 0 100-2H3a1 1 0 100 2zm0 6h14a1 1 0 100-2H3a1 1 0 100 2z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-gray-800 shadow-lg">
+    <a href="#home" class="block py-2 px-4 text-gray-300 hover:bg-gray-700">Home</a>
+    <a href="#about" class="block py-2 px-4 text-gray-300 hover:bg-gray-700">About Us</a>
+    <a href="#menu" class="block py-2 px-4 text-gray-300 hover:bg-gray-700">Menu</a>
+    <a href="#contact" class="block py-2 px-4 text-gray-300 hover:bg-gray-700">Contact</a>
+  </div>
+
+  <!-- Main Content Section -->
+  <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 space-y-16">
+    
+    <!-- Home Section -->
+    <section id="home" class="text-center space-y-6">
+      <h1 class="text-4xl font-bold text-yellow-400">Welcome to Delicious Bites</h1>
+      <p class="text-lg text-gray-400">Experience the taste of authentic cuisine with a modern twist.</p>
+      <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?cs=srgb&dl=pexels-pixabay-260922.jpg&fm=jpg" alt="Restaurant ambiance" class="mx-auto rounded-lg shadow-lg mt-6">
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-gray-800 py-12 rounded-lg shadow-lg">
+      <div class="text-center">
+        <h2 class="text-2xl font-semibold text-yellow-400">About Us</h2>
+        <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+          At Delicious Bites, we believe in delivering flavors that captivate the senses. From locally sourced ingredients to unique recipes, our chefs bring creativity and passion to every dish.
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="space-y-8">
+      <div class="text-center">
+        <h2 class="text-2xl font-semibold text-yellow-400">Our Menu</h2>
+        <p class="mt-4 text-gray-400">Explore our curated selection of dishes crafted with love.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Menu Item 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRselIznoijy1jIf1_klBW6iU6kpXZNOHwCCg&s" alt="Dish 1" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-lg font-semibold text-yellow-400">Grilled Salmon</h3>
+          <p class="mt-2 text-gray-400">Succulent salmon grilled to perfection with a touch of lemon and herbs.</p>
+        </div>
+        <!-- Menu Item 2 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <img src="https://assets.epicurious.com/photos/5988e3458e3ab375fe3c0caf/1:1/w_3607,h_3607,c_limit/How-to-Make-Chicken-Alfredo-Pasta-hero-02082017.jpg" alt="Dish 2" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-lg font-semibold text-yellow-400">Pasta Primavera</h3>
+          <p class="mt-2 text-gray-400">Fresh vegetables tossed in a creamy sauce over al dente pasta.</p>
+        </div>
+        <!-- Menu Item 3 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <img src="https://www.melskitchencafe.com/wp-content/uploads/2023/01/updated-lava-cakes7-500x500.jpg" alt="Dish 3" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-lg font-semibold text-yellow-400">Chocolate Lava Cake</h3>
+          <p class="mt-2 text-gray-400">Warm and gooey chocolate cake served with vanilla ice cream.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 py-12 rounded-lg shadow-lg">
+      <div class="text-center">
+        <h2 class="text-2xl font-semibold text-yellow-400">Contact Us</h2>
+        <p class="mt-4 text-gray-400">We’d love to hear from you. Book a table or ask us anything!</p>
+        <p class="mt-4 text-gray-400 max-w-2xl mx-auto">Feel free to give us a call at (555) 123-4567 or email us at contact@deliciousbites.com.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center">
+        <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+        <div class="space-x-4">
+          <a href="#" class="hover:text-yellow-400">Privacy Policy</a>
+          <a href="#" class="hover:text-yellow-400">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
